@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Form Validation</title>
+    <link rel="stylesheet" type="text/css" href="style.css" />
+    <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+  </head>
+  <body>
+    <div class="container">
+      <h1>REGISTER</h1>
+      <form id="registration_form">
+        <div>
+          <input type="text" id="form_fname" name="" required="" />
+          <span class="error_form" id="fname_error_message"></span>
+          <label> Full Name </label>
+        </div>
+        <div>
+          <input type="email" id="form_email" name="" required="" />
+          <span class="error_form" id="email_error_message"></span>
+          <label>Email</label>
+        </div>
+        <div>
+          <input type="password" id="form_password" name="" required="" />
+          <span class="error_form" id="password_error_message"></span>
+          <label>Password</label>
+        </div>
+        <div>
+          <input
+            type="password"
+            id="form_retype_password"
+            name=""
+            required=""
+          />
+          <span class="error_form" id="retype_password_error_message"></span>
+          <label>Re-type Password</label>
+        </div>
+
+        <div class="sex">
+          <input
+            value="male"
+            type="radio"
+            id="form_male"
+            name="sex"
+            required=""
+          />
+          <p id="label_male" for="form_male">Male</p>
+          <span class="error_form" id="sex_error_message"></span>
+
+          <input
+            value="female"
+            type="radio"
+            id="form_female"
+            name="sex"
+            required=""
+          />
+          <p id="label_female" for="form_female">Female</p>
+          <span class="error_form" id="sex_error_message"></span>
+        </div>
+        <div class="coun">
+          <select name="country" id="country">
+            <option value="none" selected disabled hidden>
+              Select Country
+            </option>
+            <option value="indonesia">Indonesia</option>
+            <option value="singapore">Singapore</option>
+            <option value="malaysia">Malaysia</option>
+            <option value="thailand">Thailand</option>
+          </select>
+          <span class="error_form" id="country_error_message"></span>
+        </div>
+        <input type="submit" value="Register" name="" />
+        <div class="google">
+          <img class="logo" src="gg.png" alt="png" />
+          <p class="con-google">Continue with Google</p>
+        </div>
+        <div class="in">
+          <img class="logoIN" src="in.png" alt="png" />
+          <p class="con-in">Continue with Linked In</p>
+        </div>
+      </form>
+    </div>
+    <script src="index.js"></script>
+  </body>
+</html>
